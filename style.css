@@ -6,8 +6,20 @@
     border: none;
 }
 
+.padding-left1{
+    padding-left: 25px;
+}
+
+.padding-left2{
+    padding-left: 15px;
+}
+
+.padding-medium{
+    padding: 15px 0px 15px 0px;
+}
+
 .background-color-gray{
-    background-color: rgb(163, 162, 162);
+    background-color: #eaeaea;
 }
 
 
@@ -30,12 +42,16 @@
     align-items: center;
 }
 
+.text-center{
+    text-align: center;
+}
+
 .flex-wrap{
     flex-wrap:wrap ;
 }
 
 .logo{
-    height: 40px;
+    height: 25px;
     width: 170px;
 }
 
@@ -44,7 +60,7 @@
 }
 
 .grey-light{
-    background-color: lightgray;
+    background-color: #f6f6f6;
 }
 
 
@@ -63,6 +79,13 @@
 .background-footer{
     background-color: grey;
 }
+
+
+
+
+
+
+
 
 .card{
     display: flex;
@@ -89,4 +112,21 @@
 
 .shrikhand{
     font-family: 'Shrikhand', cursive;
+}
+
+.police-color1{
+    color: #353535;
+}
+
+.font-weight-bold{
+    font-weight: bold;
+}
+
+
+
+
+
+
+.shadow1{
+    box-shadow: 0px 0px 10px 0px rgb(80, 80, 80);
 }
