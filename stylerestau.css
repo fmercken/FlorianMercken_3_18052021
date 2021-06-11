@@ -1,0 +1,20 @@
+.marging-none{
+    margin: 0 ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.background-photo{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}

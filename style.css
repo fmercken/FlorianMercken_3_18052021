@@ -4,6 +4,10 @@
 .margin-index{
     margin: 40px 0px 0px 10px;
 }
+
+.margin-footer{
+    margin-right: 10px;
+}
 .border-none{
     border: none;
 }
@@ -92,7 +96,16 @@
 }
 
 .background-footer{
-    background-color: grey;
+    background-color: #353535 ;
+    padding-top: 20px;
+    padding-left: 10px;
+    
+}
+
+.text-footer{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 10px;
 }
 
 
@@ -139,13 +152,14 @@
     padding-top: 20px;
     margin-top: 40px;
     padding-left: 10px;
+    padding-bottom: 40px;
 }
 
 .card{
     display: flex;
     align-items: center;
     flex-direction: column;
-    width: 90%;
+    width: 95%;
     height: 215px;
     border-radius: 25px 25px 25px 25px;
     border: 1px;
