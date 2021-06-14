@@ -18,3 +18,28 @@
     height: 180px;
     object-fit: cover;
 }
+
+.menu-restau{
+    background-color: #f4f4f4;
+    border-radius: 25px 25px 0px 0px;
+}
+
+.titre-restau{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.button-restau{
+    border-radius: 25px 25px 25px 25px;
+    border: 1px;
+    background-color: #f6f6f6;
+    width: 90%;
+    height: 60px;
+    text-align: center;
+    margin-bottom: 15px;
+    box-shadow: 0px 3px 3px 0px rgb(80 80 80);
+    margin: 15px 0px 0px 10px;
+    display: flex;
+    align-items: center;
+}
