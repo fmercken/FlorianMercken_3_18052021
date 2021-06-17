@@ -98,14 +98,20 @@
 .background-footer{
     background-color: #353535 ;
     padding-top: 20px;
-    padding-left: 10px;
+    padding-left: 20px;
+    padding-bottom: 20px;
     
 }
 
 .text-footer{
     display: flex;
     justify-content: flex-start;
-    margin-top: 10px;
+    align-items: center;
+    height: 25px;
+}
+
+.icones-footer{
+    font-size: 15px;
 }
 
 
@@ -152,6 +158,7 @@
     padding-top: 20px;
     margin-top: 40px;
     padding-left: 10px;
+    padding-right: 10px;
     padding-bottom: 40px;
 }
 
@@ -159,8 +166,6 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    width: 95%;
-    height: 215px;
     border-radius: 25px 25px 25px 25px;
     border: 1px;
     background-color: white;
@@ -172,12 +177,11 @@
     object-fit: cover; 
     border-radius: 25px 25px 0px 0px ;
     width: 100%;
-    height: 145px;
+    height: 160px;
 }
 
 .footer-card{
     width: 100%;
-    margin-top: 10px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -186,14 +190,9 @@
 
 .text-card{
     width: 70%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding-right: 20px;
 }
 
 .footer-text-card{
-    padding-bottom: 5px;
     font-weight: bold;
     font-size: 19px
 }
