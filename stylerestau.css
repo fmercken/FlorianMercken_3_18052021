@@ -14,12 +14,6 @@
 }
 
 
-.margin-footer-restau{
-    margin-top: 1160px;
-}
-
-
-
 .background-photo{
     width: 100%;
     height: 250px;
@@ -28,11 +22,13 @@
 
 .menu-restau{
     background-color: #f4f4f4;
-    border-radius: 25px 25px 0px 0px;
-    position: absolute;
+    border-radius: 35px 35px 0px 0px;
+    
     padding: 15px 15px 15px 15px;
     margin-top: -40px;
-    width: 92.5%;
+
+    z-index: 1000;
+    position:relative;
 }
 
 .titre-restau{
@@ -67,6 +63,8 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+
+    opacity:0;
 }
 
 .button-restau > .content
@@ -87,53 +85,146 @@
 }
 
 
-.anim-check{
-    color: #f6f6f6;
+
+
+
+
+.anim2 {
     display: flex;
     align-content: center;
+    justify-content: center;
     align-items: center;
-    font-size: x-large;
-    animation-name: animation-check;
-    animation-duration: 2s;
+    background: #99e2d0;
+    border-radius: 0px;
+    color: white;
+    text-align: center;
+    transition-duration: 5s;
+    height: 60px;
+    width: 0px;
+    transition: all 1s ease;
+}
+  
+.button-restau:hover > .anim-menu >.anim2 {
+    visibility: visible;
+    background-color: #99e2d0;
+    width: 60px;
+    height: 60px;
+    border-radius: 0px 10px 10px 0px;
+    transform: scaleX(1);
 }
 
-@keyframes animation-check{
-    from {width: 0px;
-        visibility: visible;
-    
-    }
-    to {transform: rotate(360deg);
-        
-        
-    }
-  }
+.anim3{
 
-
-
-
-.anim-menu:hover{
     visibility: hidden;
-    background-color: #f6f6f6;
-    height:100%;
-    width: 0px;
-    animation-name: animation-menu;
-    animation-duration: 2s;
-    animation-direction: alternate;
-    animation-iteration-count: infinite;
+    background-color: transparent;
+}
 
 
-    
-  }
-  
-  @keyframes animation-menu{
-    from {background-color: #99e2d0;
-        width: 0px;
-        visibility: visible;
-    
+.button-restau:hover > .anim-menu >.anim2 >.anim3 {
+    visibility: visible;
+    background-color: transparent;
+    transform: rotate(360deg);  
+    transition: all 0.5s ease;
+}
+
+.anim-check{
+    font-size: 30px;
+    background-color: transparent;
+}
+
+
+.vignets1 {
+    animation: 1s show-button 0s forwards;
+
+}
+
+.vignets2{
+    animation: 1s show-button 0.5s forwards;
+
+}
+
+.vignets3 {
+    animation: 1s show-button 1s forwards;
+}
+
+.vignets4 {
+    animation: 1s show-button 1.5s forwards;
+}
+
+.vignets5 {
+    animation: 1s show-button 2s forwards;
+}
+.vignets6 {
+    animation: 1s show-button 2.5s forwards;
+}
+.vignets7 {
+    animation: 1s show-button 3s forwards;
+}
+.vignets8 {
+    animation: 1s show-button 3.5s forwards;
+}
+.vignets9 {
+    animation: 1s show-button 4s forwards;
+}
+
+
+@-webkit-keyframes show-button {
+    from {
+        opacity:0;
     }
-    to {background-color: #99e2d0;
-        width: 100px;
-        height: 100%;
-        border-radius: 0px 10px 10px 0px;
+    to {
+        opacity:1;
     }
-  }
+}
+
+
+
+.loading-container{
+    position:fixed;
+    background-color: #7777779a;
+
+    top:0;
+    bottom: 0;
+    left:0;
+    right: 0;
+
+    z-index: 99999;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    animation: 1s loading-animation 2s forwards;
+    
+}
+
+.loading-container > .spinner{
+    animation: rotation 2s infinite linear;
+    color:#99e2d0 ;
+    font-size: 70px;
+
+}
+
+@-webkit-keyframes rotation {
+    from {
+            -webkit-transform: rotate(0deg);
+    }
+    to {
+            -webkit-transform: rotate(359deg);
+    }
+}
+
+
+
+@keyframes loading-animation {
+    from {
+        opacity:1;
+        
+    }
+    to {
+        opacity:0;
+        position: relative;
+        height: 0;
+        width: 0;
+    }
+}
