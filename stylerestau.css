@@ -13,7 +13,6 @@
     margin-bottom: 40px;
 }
 
-
 .background-photo{
     width: 100%;
     height: 250px;
@@ -22,11 +21,9 @@
 
 .menu-restau{
     background-color: #f4f4f4;
-    border-radius: 35px 35px 0px 0px;
-    
+    border-radius: 35px 35px 0px 0px;  
     padding: 15px 15px 15px 15px;
     margin-top: -40px;
-
     z-index: 1000;
     position:relative;
 }
@@ -47,7 +44,6 @@
     border-bottom: 2px solid;
     border-color: #99e2d0;
     width: 40px;
-
 }
 
 .button-restau{
@@ -63,15 +59,12 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-
     opacity:0;
 }
 
-.button-restau > .content
-{
+.button-restau > .content{
     width: 100%;
-    padding: 10px;   
-    
+    padding: 10px;       
 }
 
 .titre-button{
@@ -83,11 +76,6 @@
     display: flex;
     justify-content: space-between;
 }
-
-
-
-
-
 
 .anim2 {
     display: flex;
@@ -114,11 +102,9 @@
 }
 
 .anim3{
-
     visibility: hidden;
     background-color: transparent;
 }
-
 
 .button-restau:hover > .anim-menu >.anim2 >.anim3 {
     visibility: visible;
@@ -132,15 +118,12 @@
     background-color: transparent;
 }
 
-
 .vignets1 {
     animation: 1s show-button 0s forwards;
-
 }
 
 .vignets2{
     animation: 1s show-button 0.5s forwards;
-
 }
 
 .vignets3 {
@@ -167,8 +150,7 @@
     animation: 1s show-button 4s forwards;
 }
 
-
-@-webkit-keyframes show-button {
+@keyframes show-button {
     from {
         opacity:0;
     }
@@ -177,35 +159,27 @@
     }
 }
 
-
-
 .loading-container{
     position:fixed;
     background-color: #7777779a;
-
     top:0;
     bottom: 0;
     left:0;
     right: 0;
-
     z-index: 99999;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     animation: 1s loading-animation 2s forwards;
-    
 }
 
 .loading-container > .spinner{
     animation: rotation 2s infinite linear;
     color:#99e2d0 ;
     font-size: 70px;
-
 }
 
-@-webkit-keyframes rotation {
+@keyframes rotation {
     from {
             -webkit-transform: rotate(0deg);
     }
@@ -213,8 +187,6 @@
             -webkit-transform: rotate(359deg);
     }
 }
-
-
 
 @keyframes loading-animation {
     from {
@@ -227,4 +199,18 @@
         height: 0;
         width: 0;
     }
+}
+
+
+
+/************Desktop*******************/
+
+@media all and (min-width: 1024px){
+
+}
+
+/***************Tablette*****************/
+
+@media (min-width: 768px) and (max-width:1023px){
+    
 }
