@@ -6,6 +6,7 @@
     padding: 15px;
 }
 
+
 .margin-center{
     margin-right: 25%;
     margin-left: 25%;
@@ -49,10 +50,9 @@
 .button-restau{
     border-radius: 10px;
     border: 1px;
-    background-color: #f6f6f6;
-    width: 90%;
+    background-color: white;
+    width: 100%;
     height: 60px;
-    text-align: center;
     margin-bottom: 15px;
     box-shadow: 0px 3px 3px 0px #e2e2e2;
     display: flex;
@@ -64,17 +64,23 @@
 
 .button-restau > .content{
     width: 100%;
-    padding: 10px;       
+    font-size: 13px;       
 }
 
 .titre-button{
     margin: 0;
     display: flex;
+    margin: 5px;
 }
 
 .footer-button{
     display: flex;
     justify-content: space-between;
+    margin: 5px;
+}
+
+.bold{
+    font-weight: bold;
 }
 
 .anim2 {
@@ -114,7 +120,7 @@
 }
 
 .anim-check{
-    font-size: 30px;
+    font-size: 20px;
     background-color: transparent;
 }
 
@@ -179,6 +185,8 @@
     font-size: 70px;
 }
 
+
+
 @keyframes rotation {
     from {
             -webkit-transform: rotate(0deg);
@@ -201,7 +209,16 @@
     }
 }
 
+.pull-left{
+    float:left;
+}
 
+.mt-1{
+    margin-top: 10px;
+}
+.mt-2{
+    margin-top: 20px;
+}
 
 /************Desktop*******************/
 
@@ -209,8 +226,4 @@
 
 }
 
-/***************Tablette*****************/
 
-@media (min-width: 768px) and (max-width:1023px){
-    
-}
