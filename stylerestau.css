@@ -3,7 +3,7 @@
 }
 
 .padding-header{
-    padding: 15px;
+    padding: 15px 21px 15px 0px;
 }
 
 
@@ -64,7 +64,17 @@
 
 .button-restau > .content{
     width: 100%;
-    font-size: 13px;       
+    font-size: 13px;      
+    transition: all 1s ease; 
+}
+.button-restau:hover > .content{
+    width: calc(100% - 60px);    
+}
+
+.text-overflow{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 .titre-button{
@@ -213,8 +223,11 @@
     float:left;
 }
 
-.mt-1{
-    margin-top: 10px;
+.arrow{
+    margin-top: 18px;
+    margin-left: 21px;
+    color: #353535;
+    font-size: large;
 }
 .mt-2{
     margin-top: 20px;
